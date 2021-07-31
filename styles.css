@@ -7,6 +7,7 @@ body {
     background-size: cover;
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
   }
   
   @media (min-width:600px) {
@@ -16,9 +17,6 @@ body {
     }
     
 
-
-  
-  
   .container {
     overflow: hidden;
     background-color: rgb(19, 19, 19);
@@ -92,3 +90,34 @@ body {
     bottom: 0;
     width: 100%;
   }
+
+  .maincontent {
+    display: flex;
+    justify-content: center;
+    background-image: url("https://www.tasteoftravel.at/wp-content/uploads/Caprese-Salat-Rezept-Italien.jpg");
+    background-size: cover;
+    height: max-content;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.maincontent h1 {
+    color: green;
+    margin: 50px 50px;
+    font-size: 48pt;
+
+}
+.maincontent h2 {
+    color: green;
+    margin: 50px 50px;
+    font-size: 36pt;
+}
+.recipe {
+width: 60%;
+background: rgba(255, 255, 255, 0.5);
+height: max-content;
+}
+.recipe p {
+    font-size: 1.5em;
+    color: black;
+    line-height: 1.5;
+    }
