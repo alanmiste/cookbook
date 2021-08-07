@@ -1,20 +1,31 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    background-color: #333333;
-    background-image: url("https://cdn.pixabay.com/photo/2014/10/22/16/38/ingredients-498199_960_720.jpg");
+    background-color:rgba(51, 51, 51, 0.75);
     height: 100%; 
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+  }
+  .main{
+    background-image: url("https://cdn.pixabay.com/photo/2014/10/22/16/38/ingredients-498199_960_720.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
   }
   /* min widths should be changed to typical device screen sizes */
 /*   @media (min-width:600px) {
       header nav ul {
           flex-flow: row;    
         } */
-
+    
   @media (min-width:600px) {
     .recipe p {
       font-size: 1.0em;
@@ -26,7 +37,11 @@ body {
     .recipe h2 {
       font-size: 24pt;
     }
+    .recipe h3 {
+      font-size: 20pt;
+    }
     .recipe ul {
+      list-style: none;
       font-size: 1.0em;
       line-height: 1.5;
     }
@@ -42,7 +57,11 @@ body {
     .recipe h2 {
       font-size: 30pt;
     }
+    .recipe h3 {
+      font-size: 26pt;
+    }
     .recipe ul {
+      list-style: none;
       font-size: 1.2em;
       line-height: 1.5;
     }
@@ -58,32 +77,36 @@ body {
     .recipe h2 {
       font-size: 36pt;
     }
+    .recipe h3 {
+      font-size: 32pt;
+    }
     .recipe ul {
+      list-style: none;
       font-size: 1.4em;
       line-height: 1.5;
   }
+}
   .header {
     overflow: hidden;
     background-color: rgb(19, 19, 19);
     padding: 20px;
-    /* display: flexbox; */
     flex-direction: row;
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
   }
   .h1{
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   .logo{
-    background-color: azure;
-    /* display: flex; */
+    background-color: goldenrod;
     justify-content: left;
     align-items: left;
     margin: 20px;
-    /* padding: 20px; */
+  }
+  h1{
+    padding-right: 28px;
   }
   
   .navbar a {
@@ -94,6 +117,22 @@ body {
     padding: 14px 16px;
     text-decoration: none;
   }
+  .navbar.insalata a, .navbar.insalata li button{
+    color: black !important;
+  }
+
+  .navbar.mainpaneer a, .navbar.paneer li button{
+    color: black !important;
+  }
+
+  .navbar.paneer a, .navbar.paneer li button{
+    color: black !important;
+  }
+
+  .navbar.mainpaneer a, .navbar.paneer li button{
+    color: black !important;
+  }
+
   
   .dropdown {
     float: left;
@@ -156,60 +195,63 @@ body {
   }
 
   .maincontent_caprese {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-image: url("https://www.tasteoftravel.at/wp-content/uploads/Caprese-Salat-Rezept-Italien.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    /* display: flex;
+    justify-content: center; */
     height: max-content;
     padding: 0px;
     margin-bottom: 50px;
     margin-top: 0px;
-    
+    text-align: center;
+    padding: 10px 50px;
   }
-.maincontent_caprese .recipe {
-width: 60%;
+  .maininsalata{
+    background-image: url("https://www.tasteoftravel.at/wp-content/uploads/Caprese-Salat-Rezept-Italien.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+.recipe {
+/* width: 60%; */
 /*background: rgba(255, 255, 255, 0.5);*/
 height: max-content;
 }
-.maincontent_caprese .recipe h1 {
+.maincontent_caprese .recipe h2 {
   color: rgb(70, 135, 103);
   margin: 50px 50px;
 }
-.maincontent_caprese .recipe h2 {
+.maincontent_caprese .recipe h3 {
   color: rgb(70, 135, 103);
+  font-size: 48;
   margin: 50px 50px;
 }
 .maincontent_caprese .recipe p {
   color: rgb(52, 64, 57);
     }
 .maincontent_caprese .recipe ul {
+  list-style: none;
   color: rgb(52, 64, 57);
-  text-align: left;
+  text-align: center;
 }
 
 .maincontent_paneer {
-  display: flex;
-  justify-content: center;
-  background-image: url("https://www.harighotra.co.uk/images/recipes/Oct16/karahi_paneer_landscape.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: max-content;
   text-align: center;
   padding: 0px;
   margin-bottom: 50px;
+  text-align: center;
+  padding: 10px 50px;
 }
 .maincontent_paneer .recipe {
-  width: 60%;
+ 
   /*background: rgba(255, 255, 255, 0.5);*/
   height: max-content;
   }
-  .maincontent_paneer .recipe h1 {
+  .maincontent_paneer .recipe h2 {
     color: orangered;
     margin: 50px 50px;
   }
-  .maincontent_paneer .recipe h2 {
+  .maincontent_paneer .recipe h3 {
     color: orangered;
     margin: 50px 50px;
   }
@@ -217,6 +259,12 @@ height: max-content;
     color: whitesmoke;
       }
       .maincontent_paneer .recipe ul {
+        list-style: none;
     color: whitesmoke;
-    text-align: left;
+    text-align: center;
       }
+  .mainpaneer {
+    background-image: url("https://www.harighotra.co.uk/images/recipes/Oct16/karahi_paneer_landscape.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
