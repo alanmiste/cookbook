@@ -26,6 +26,10 @@ body {
     .recipe h2 {
       font-size: 24pt;
     }
+    .recipe ul {
+      font-size: 1.0em;
+      line-height: 1.5;
+    }
   }
   @media (min-width:800px) {
     .recipe p {
@@ -37,6 +41,10 @@ body {
     }
     .recipe h2 {
       font-size: 30pt;
+    }
+    .recipe ul {
+      font-size: 1.2em;
+      line-height: 1.5;
     }
   }
   @media (min-width:1000px) {
@@ -50,6 +58,9 @@ body {
     .recipe h2 {
       font-size: 36pt;
     }
+    .recipe ul {
+      font-size: 1.4em;
+      line-height: 1.5;
   }
   .container {
     overflow: hidden;
@@ -136,19 +147,55 @@ body {
     padding: 0px;
     margin-bottom: 50px;
   }
-.recipe {
+.maincontent_caprese .recipe {
 width: 60%;
 /*background: rgba(255, 255, 255, 0.5);*/
 height: max-content;
 }
-.recipe h1 {
+.maincontent_caprese .recipe h1 {
   color: rgb(70, 135, 103);
   margin: 50px 50px;
 }
-.recipe h2 {
+.maincontent_caprese .recipe h2 {
   color: rgb(70, 135, 103);
   margin: 50px 50px;
 }
-.recipe p {
+.maincontent_caprese .recipe p {
   color: rgb(52, 64, 57);
     }
+.maincontent_caprese .recipe ul {
+  color: rgb(52, 64, 57);
+  text-align: left;
+}
+
+.maincontent_paneer {
+  display: flex;
+  justify-content: center;
+  background-image: url("https://www.harighotra.co.uk/images/recipes/Oct16/karahi_paneer_landscape.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: max-content;
+  text-align: center;
+  padding: 0px;
+  margin-bottom: 50px;
+}
+.maincontent_paneer .recipe {
+  width: 60%;
+  /*background: rgba(255, 255, 255, 0.5);*/
+  height: max-content;
+  }
+  .maincontent_paneer .recipe h1 {
+    color: orangered;
+    margin: 50px 50px;
+  }
+  .maincontent_paneer .recipe h2 {
+    color: orangered;
+    margin: 50px 50px;
+  }
+  .maincontent_paneer .recipe p {
+    color: whitesmoke;
+      }
+      .maincontent_paneer .recipe ul {
+    color: whitesmoke;
+    text-align: left;
+  }
