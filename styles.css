@@ -1,3 +1,8 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
     background-color:rgba(51, 51, 51, 0.75);
     height: 100%; 
@@ -13,13 +18,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 80vh;
   }
   /* min widths should be changed to typical device screen sizes */
 /*   @media (min-width:600px) {
       header nav ul {
           flex-flow: row;    
         } */
-    }
+    
   @media (min-width:600px) {
     .recipe p {
       font-size: 1.0em;
@@ -64,14 +70,19 @@ body {
     display: flex;
   }
   .h1{
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   .logo{
-    background-color: azure;
+    background-color: goldenrod;
     justify-content: left;
     align-items: left;
     margin: 20px;
+  }
+  h1{
+    padding-right: 28px;
   }
   
   .navbar a {
@@ -81,6 +92,9 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+  }
+  .navbar.insalata a, .navbar.insalata li button{
+    color: black !important;
   }
   
   .dropdown {
@@ -144,18 +158,20 @@ body {
   }
 
   .maincontent_caprese {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
-    background-image: url("https://www.tasteoftravel.at/wp-content/uploads/Caprese-Salat-Rezept-Italien.jpg");
-    background-size: cover;
-    background-attachment: fixed;
     height: max-content;
     text-align: center;
     padding: 0px;
     margin-bottom: 50px;
   }
+  .maininsalata{
+    background-image: url("https://www.tasteoftravel.at/wp-content/uploads/Caprese-Salat-Rezept-Italien.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
 .recipe {
-width: 60%;
+/* width: 60%; */
 /*background: rgba(255, 255, 255, 0.5);*/
 height: max-content;
 }
