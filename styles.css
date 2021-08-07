@@ -1,13 +1,18 @@
 body {
-    background-color: #333333;
-    background-image: url("https://cdn.pixabay.com/photo/2014/10/22/16/38/ingredients-498199_960_720.jpg");
+    background-color:rgba(51, 51, 51, 0.75);
     height: 100%; 
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+  }
+  .main{
+    background-image: url("https://cdn.pixabay.com/photo/2014/10/22/16/38/ingredients-498199_960_720.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   /* min widths should be changed to typical device screen sizes */
 /*   @media (min-width:600px) {
@@ -55,24 +60,18 @@ body {
     overflow: hidden;
     background-color: rgb(19, 19, 19);
     padding: 20px;
-    /* display: flexbox; */
     flex-direction: row;
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
   }
   .h1{
-    /* display: flex; */
     justify-content: center;
     align-items: center;
   }
   .logo{
     background-color: azure;
-    /* display: flex; */
     justify-content: left;
     align-items: left;
     margin: 20px;
-    /* padding: 20px; */
   }
   
   .navbar a {
