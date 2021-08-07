@@ -141,8 +141,10 @@ body {
   .navbar.mainpaneer a, .navbar.paneer li button{
     color: black !important;
   }
+  .mainmacarons a:hover, .macarons .dropdown:hover .dropbtn {
+    background-color: pink !important;
+  }
 
-  
   .dropdown {
     float: left;
     overflow: hidden;
