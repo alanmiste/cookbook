@@ -19,6 +19,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
+    display: flex;
+    flex-direction: column;
   }
   /* min widths should be changed to typical device screen sizes */
 /*   @media (min-width:600px) {
@@ -45,6 +47,7 @@ body {
       font-size: 1.0em;
       line-height: 1.5;
     }
+   
   }
   @media (min-width:800px) {
     .recipe p {
@@ -64,6 +67,9 @@ body {
       list-style: none;
       font-size: 1.2em;
       line-height: 1.5;
+    }
+    h1{
+      font-size: 2em;
     }
   }
   @media (min-width:1000px) {
@@ -85,6 +91,9 @@ body {
       font-size: 1.4em;
       line-height: 1.5;
   }
+  h1{
+    font-size: 3em;
+  }
 }
   .header {
     overflow: hidden;
@@ -100,13 +109,17 @@ body {
     width: 100%;
   }
   .logo{
-    background-color: goldenrod;
+    /* background-color: goldenrod; */
     justify-content: left;
     align-items: left;
     margin: 20px;
   }
+  .logo img{
+    width: 150px
+  }
   h1{
     padding-right: 28px;
+    font-family: 'Pacifico', cursive;
   }
   
   .navbar a {
@@ -195,11 +208,9 @@ body {
   }
 
   .maincontent_caprese {
-    /* display: flex;
-    justify-content: center; */
     height: max-content;
     padding: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-top: 0px;
     text-align: center;
     padding: 10px 50px;
@@ -238,7 +249,7 @@ height: max-content;
   height: max-content;
   text-align: center;
   padding: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   text-align: center;
   padding: 10px 50px;
 }
@@ -267,4 +278,53 @@ height: max-content;
     background-image: url("https://www.harighotra.co.uk/images/recipes/Oct16/karahi_paneer_landscape.jpg");
     background-size: cover;
     background-attachment: fixed;
+  }
+
+  /*Image boxes style*/
+  
+  .imageboxes{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-around;
+  }
+  
+  .imgcontainer {
+    position: relative;
+    width: 30%;
+  }
+  
+  .boximage {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(255, 196, 0);
+  }
+  
+  .imgcontainer:hover .overlay {
+    opacity: 0.50;
+  }
+  
+  .imgtext {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
