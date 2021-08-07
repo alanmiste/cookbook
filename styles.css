@@ -40,6 +40,9 @@ body {
     .recipe h3 {
       font-size: 20pt;
     }
+    .recipe h4 {
+      font-size: 14pt;
+    }
     .recipe ul {
       list-style: none;
       font-size: 1.0em;
@@ -60,6 +63,9 @@ body {
     .recipe h3 {
       font-size: 26pt;
     }
+    .recipe h4 {
+      font-size: 18pt;
+    }
     .recipe ul {
       list-style: none;
       font-size: 1.2em;
@@ -79,6 +85,9 @@ body {
     }
     .recipe h3 {
       font-size: 32pt;
+    }
+    .recipe h4 {
+      font-size: 24pt;
     }
     .recipe ul {
       list-style: none;
@@ -199,10 +208,10 @@ body {
     justify-content: center; */
     height: max-content;
     padding: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-top: 0px;
     text-align: center;
-    padding: 10px 50px;
+    padding: 20px 50px 100px 50px;
   }
   .maininsalata{
     background-image: url("https://www.tasteoftravel.at/wp-content/uploads/Caprese-Salat-Rezept-Italien.jpg");
@@ -238,12 +247,12 @@ height: max-content;
   height: max-content;
   text-align: center;
   padding: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   text-align: center;
-  padding: 10px 50px;
+  padding: 20px 50px 100px 50px;
 }
+
 .maincontent_paneer .recipe {
- 
   /*background: rgba(255, 255, 255, 0.5);*/
   height: max-content;
   }
@@ -252,6 +261,10 @@ height: max-content;
     margin: 50px 50px;
   }
   .maincontent_paneer .recipe h3 {
+    color: orangered;
+    margin: 50px 50px;
+  }
+    .maincontent_paneer .recipe h3 {
     color: orangered;
     margin: 50px 50px;
   }
@@ -268,3 +281,42 @@ height: max-content;
     background-size: cover;
     background-attachment: fixed;
   }
+  .maincontent_macarons {
+    background-size: cover;
+    background-attachment: fixed;
+    height: max-content;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px 50px 100px 50px;
+  }
+  .maincontent_macarons .recipe {
+    /*background: rgba(255, 255, 255, 0.5);*/
+    height: max-content;
+    }
+    .maincontent_macarons .recipe h2 {
+      color: rgb(243, 98, 123);
+      margin: 50px 50px;
+    }
+    .maincontent_macarons .recipe h3 {
+      color:  rgb(243, 98, 123);
+      margin: 50px 50px;
+    }
+    .maincontent_macarons .recipe h4 {
+      color:  rgb(243, 98, 123);
+      margin: 50px 50px;
+    }
+    .maincontent_macarons .recipe p {
+      color: whitesmoke;
+        }
+        .maincontent_macarons .recipe ul {
+          list-style: none;
+      color: whitesmoke;
+      text-align: center;
+        }
+    .mainmacarons {
+      background-image: url("https://cdn.pixabay.com/photo/2017/07/28/14/29/macarons-2548827_960_720.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+    }
