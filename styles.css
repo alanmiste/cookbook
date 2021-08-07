@@ -10,10 +10,10 @@ body {
     margin: 0;
   }
   /* min widths should be changed to typical device screen sizes */
-  @media (min-width:600px) {
+/*   @media (min-width:600px) {
       header nav ul {
           flex-flow: row;    
-        }
+        } */
     }
   @media (min-width:600px) {
     .recipe p {
@@ -51,9 +51,28 @@ body {
       font-size: 36pt;
     }
   }
-  .container {
+  .header {
     overflow: hidden;
     background-color: rgb(19, 19, 19);
+    padding: 20px;
+    /* display: flexbox; */
+    flex-direction: row;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  .h1{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+  }
+  .logo{
+    background-color: azure;
+    /* display: flex; */
+    justify-content: left;
+    align-items: left;
+    margin: 20px;
+    /* padding: 20px; */
   }
   
   .navbar a {
