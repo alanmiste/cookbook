@@ -14,7 +14,7 @@ body {
       header nav ul {
           flex-flow: row;    
         } */
-    }
+
   @media (min-width:600px) {
     .recipe p {
       font-size: 1.0em;
@@ -158,13 +158,15 @@ body {
   .maincontent_caprese {
     display: flex;
     justify-content: center;
+    text-align: center;
     background-image: url("https://www.tasteoftravel.at/wp-content/uploads/Caprese-Salat-Rezept-Italien.jpg");
     background-size: cover;
     background-attachment: fixed;
     height: max-content;
-    text-align: center;
     padding: 0px;
     margin-bottom: 50px;
+    margin-top: 0px;
+    
   }
 .maincontent_caprese .recipe {
 width: 60%;
@@ -217,4 +219,4 @@ height: max-content;
       .maincontent_paneer .recipe ul {
     color: whitesmoke;
     text-align: left;
-  }
+      }
