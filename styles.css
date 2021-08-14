@@ -6,9 +6,6 @@
 body {
     background-color:rgba(51, 51, 51, 0.75);
     height: 100%; 
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -22,12 +19,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  /* min widths should be changed to typical device screen sizes */
-/*   @media (min-width:600px) {
-      header nav ul {
-          flex-flow: row;    
-        } */
-    
+  
   @media (min-width:600px) {
     .recipe p {
       font-size: 1.0em;
@@ -118,7 +110,6 @@ body {
     width: 100%;
   }
   .logo{
-    /* background-color: goldenrod; */
     justify-content: left;
     align-items: left;
     margin: 20px;
@@ -206,7 +197,6 @@ body {
 
   footer {
     font-family: 'Raleway', sans-serif;
-    /* text-transform: uppercase; */
     font-size: 11px;
     text-align: center;
     padding: 3px;
@@ -232,8 +222,6 @@ body {
     background-attachment: fixed;
   }
 .recipe {
-/* width: 60%; */
-/*background: rgba(255, 255, 255, 0.5);*/
 height: max-content;
 }
 .maincontent_caprese .recipe h2 {
@@ -266,7 +254,7 @@ height: max-content;
 }
 
 .maincontent_paneer .recipe {
-  /*background: rgba(255, 255, 255, 0.5);*/
+
   height: max-content;
   }
   .maincontent_paneer .recipe h2 {
@@ -312,8 +300,6 @@ height: max-content;
   
   .boximage {
     display: block;
-    /* width: 100%;
-    height: auto; */
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -359,7 +345,6 @@ height: max-content;
     padding: 20px 50px 100px 50px;
   }
   .maincontent_macarons .recipe {
-    /*background: rgba(255, 255, 255, 0.5);*/
     height: max-content;
     }
     .maincontent_macarons .recipe h2 {
