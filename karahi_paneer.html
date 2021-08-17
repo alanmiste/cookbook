@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3aa3d05a80.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <body>
@@ -53,6 +54,10 @@
         </ul>
     <div class="maincontent_paneer">
         <div class ="recipe">
+            <img src="https://www.harighotra.co.uk/images/recipes/Oct16/karahi_paneer_landscape.jpg" alt="Kadai Paneer" id="printImagePaneer">
+            <div class="print" id="printpagebutton">
+                <button onclick="printpage()"><i class="fas fa-print"></i></button>
+            </div>
             <h2>Kadai Paneer</h2>
             <p>
                 Kadai is the Hindi word for ‘Indian wok’ which is commonly used in everyday Indian cooking. So basically, a paneer dish made in kadai is known as kadai paneer.
@@ -89,5 +94,21 @@
             <a href="mailto:cookbookteam@example.com">cookbookteam@example.com</a>
         </p>
     </footer>
+    <script>
+       function printpage() {
+        //Get the print button and put it into a variable
+        var printButton = document.getElementById("printpagebutton");
+         //Get the print image and put it into a variable
+         var printImage = document.getElementById("printImagePaneer");
+        //Set the button visibility to 'hidden' 
+        printButton.style.visibility = 'hidden';
+        //Set the print image size to 300 px
+        printImagePaneer.style.width = '300px';
+        //Print the page content
+        window.print();
+        printButton.style.visibility = 'visible';
+        printImagePaneer.style.width = '0px';
+        }
+        </script>
 </body>
 </html>

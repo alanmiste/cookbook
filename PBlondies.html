@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3aa3d05a80.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -54,8 +55,12 @@
                         <a href="PBlondies.html">Pistachios Blondies</a>
                 </li>
             </ul>
-            <div class="maincontent_macarons">
+            <div class="maincontent_pistachio">
                 <div class="recipe">
+                    <img src="http://www.kurdish-kitchen.com/wp-content/uploads/2018/12/pistachio_rose_blondie.jpg" alt="Pistachio Blondies" id="printImagePistachios">
+                    <div class="print" id="printpagebutton">
+                        <button onclick="printpage()"><i class="fas fa-print"></i></button>
+                    </div>
                     <h2>Pistachios Blondies</h2>
                     <p>
                         This recipe is a Middle Eastern twist on a classic American treat. the focus is brown sugar and
@@ -143,6 +148,22 @@
                     <a href="mailto:cookbookteam@example.com">cookbookteam@example.com</a>
                 </p>
             </footer>
+            <script>
+                function printpage() {
+        //Get the print button and put it into a variable
+        var printButton = document.getElementById("printpagebutton");
+         //Get the print image and put it into a variable
+        var printImage = document.getElementById("printImagePistachios");
+        //Set the button visibility to 'hidden' 
+        printButton.style.visibility = 'hidden';
+        //Set the print image size to 300 px
+        printImagePistachios.style.width = '300px';
+        //Print the page content
+        window.print();
+        printButton.style.visibility = 'visible';
+        printImagePistachios.style.width = '0px';
+                }
+            </script>
     </body>
 
 </html>
