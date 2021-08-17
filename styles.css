@@ -153,9 +153,7 @@ body {
   .mainmacarons a:hover, .macarons .dropdown:hover .dropbtn {
     background-color: pink !important;
   }
-  .mainPistachios a:hover, .macarons .dropdown:hover .dropbtn {
-    background-color: pink !important;
-  }  
+
   .dropdown {
     float: left;
     overflow: hidden;
@@ -217,7 +215,6 @@ body {
 
   .maincontent_caprese {
     height: max-content;
-    padding: 0px;
     margin-bottom: 20px;
     margin-top: 0px;
     text-align: center;
@@ -228,21 +225,21 @@ body {
     background-size: cover;
     background-attachment: fixed;
   }
+  #printImageCaprese {
+    width: 0px;
+    margin: 0;
+  }
 .recipe {
   /*Alan- I added the three next lines, so the background of all recipes had been changed to transparent gray with curved corners, and that makes the text more readable */
   border-radius: 20px;
-  background-color: rgba(90, 90, 90, 0.77);
+  background-color: rgba(90, 90, 90, 0.6);
   padding: 5vh;
   height: max-content;
 }
-.maincontent_caprese .recipe h2 {
-  color: rgb(5, 226, 116);
-  margin: 50px 50px;
-}
-.maincontent_caprese .recipe h3 {
-  color: rgb(5, 226, 116);
-  font-size: 48;
-  margin: 50px 50px;
+
+.maincontent_caprese .recipe h2, .maincontent_caprese .recipe h3 {
+  color: yellowgreen;
+  margin: 20px 50px;
 }
 .maincontent_caprese .recipe p {
   color: whitesmoke;
@@ -258,7 +255,6 @@ body {
   background-attachment: fixed;
   height: max-content;
   text-align: center;
-  padding: 0px;
   margin-bottom: 20px;
   text-align: center;
   padding: 20px 50px 100px 50px;
@@ -267,18 +263,11 @@ body {
 .maincontent_paneer .recipe {
   height: max-content;
   }
-  .maincontent_paneer .recipe h2 {
+  .maincontent_paneer .recipe h2, .maincontent_paneer .recipe h3 {
     color: orangered;
-    margin: 50px 50px;
+    margin: 20px 50px;
   }
-  .maincontent_paneer .recipe h3 {
-    color: orangered;
-    margin: 50px 50px;
-  }
-    .maincontent_paneer .recipe h3 {
-    color: orangered;
-    margin: 50px 50px;
-  }
+
   .maincontent_paneer .recipe p {
     color: whitesmoke;
       }
@@ -293,6 +282,11 @@ body {
     background-attachment: fixed;
   }
 
+  #printImagePaneer {
+    width: 0px;
+    margin: 0;
+  }
+
 /* Vegan Kurdish Biryani */
 
 .maincontent_vkb {
@@ -300,7 +294,6 @@ body {
   background-attachment: fixed;
   height: max-content;
   text-align: center;
-  padding: 0px;
   margin-bottom: 20px;
   text-align: center;
   padding: 20px 50px 100px 50px;
@@ -309,18 +302,11 @@ body {
 .maincontent_vkb .recipe {
   height: max-content;
   }
-  .maincontent_vkb .recipe h2 {
+  .maincontent_vkb .recipe h2, .maincontent_vkb .recipe h3 {
     color: orangered;
-    margin: 50px 50px;
+    margin: 20px 50px;
   }
-  .maincontent_vkb .recipe h3 {
-    color: orangered;
-    margin: 50px 50px;
-  }
-    .maincontent_vkb .recipe h3 {
-    color: orangered;
-    margin: 50px 50px;
-  }
+
   .maincontent_vkb .recipe p {
     color: whitesmoke;
     margin: 2vh;
@@ -335,7 +321,10 @@ body {
     background-size: cover;
     background-attachment: fixed;
   }
-
+  #printImageVbk {
+    width: 0px;
+    margin: 0;
+  }
   /*Image boxes style*/
   
   .imageboxes{
@@ -353,11 +342,11 @@ body {
     display: flex;
     justify-content: center;
   }
-  
+  /* Increased the size of the image boxes */
   .boximage {
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 400px;
     object-fit: cover;
   }
   
@@ -377,7 +366,7 @@ body {
   
   .imgcontainer:hover .overlay {
     opacity: 0.50;
-    width: 150px;
+    width: 300px;
   }
   
   .imgtext {
@@ -391,6 +380,29 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
   }
+.print {
+  width: max-content;
+  display: block;
+  margin-right: 50px;
+  margin-left: auto;
+}
+.print button {
+background-color: transparent;
+border: 0;
+}
+.print i {
+  font-size: 36pt;
+  color:whitesmoke;
+}
+.print i:hover {
+  font-size: 36pt;
+  color:rgb(255, 196, 0);
+}
+
+.maincontent_macarons .recipe .print i:hover, .maincontent_pistachio .recipe .print i:hover {
+  font-size: 36pt;
+  color:rgb(243, 98, 123) !important;
+}
 
   /* mavarons recipe */
 
@@ -399,29 +411,19 @@ body {
     background-attachment: fixed;
     height: max-content;
     text-align: center;
-    padding: 0px;
     margin-bottom: 20px;
     text-align: center;
     padding: 20px 50px 100px 50px;
   }
-  /* Alan- I commented the rules for h3 and h4, and add them to h2 rules */
-    .maincontent_macarons .recipe h2, h3, h4{
+    .maincontent_macarons .recipe h2, .maincontent_macarons .recipe h3, .maincontent_macarons .recipe h4{
       color: rgb(243, 98, 123);
-      margin: 50px 50px;
+      margin: 20px 50px;
     }
-    /* .maincontent_macarons .recipe h3 {
-      color:  rgb(243, 98, 123);
-      margin: 50px 50px;
-    }
-    .maincontent_macarons .recipe h4 {
-      color:  rgb(243, 98, 123);
-      margin: 50px 50px;
-    } */
     .maincontent_macarons .recipe p {
       color: whitesmoke;
         }
         .maincontent_macarons .recipe ul {
-          list-style: none;
+      list-style: none;
       color: whitesmoke;
       text-align: center;
         }
@@ -430,11 +432,39 @@ body {
       background-size: cover;
       background-attachment: fixed;
     }
-
+    #printImageMacarons {
+      width: 0px;
+      margin: 0;
+    }
 
   /* Pistachios Blondies */
   .mainPistachios {
-    background-image: url("http://www.kurdish-kitchen.com/wp-content/uploads/2018/12/pistachio_rose_blondie.jpg");
+    /* background-image: url("http://www.kurdish-kitchen.com/wp-content/uploads/2018/12/pistachio_rose_blondie.jpg");*/
+    /* Eli: I changed the background image because the former one was a bit blurry. Hope thats ok. */
+    background-image: url("https://cdn.pixabay.com/photo/2020/01/16/23/22/pistachios-4772007_960_720.jpg");
     background-size: cover;
     background-attachment: fixed;
   }
+  #printImagePistachios {
+    width: 0px;
+    margin: 0;
+  }
+  .maincontent_pistachio .recipe h2, .maincontent_pistachio .recipe h3, .maincontent_pistachio .recipe h4{
+    color: rgb(3, 252, 111);
+    margin: 20px 50px;
+  }
+
+  .maincontent_pistachio {
+    background-size: cover;
+    background-attachment: fixed;
+    height: max-content;
+    text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px 50px 100px 50px;
+  }
+  .maincontent_pistachio .recipe p, ul {
+    list-style: none;
+    color: whitesmoke;
+    text-align: center;
+      }

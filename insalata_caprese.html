@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3aa3d05a80.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -55,6 +56,10 @@
 
         <div class="maincontent_caprese">
             <div class="recipe">
+                <img src="https://www.tasteoftravel.at/wp-content/uploads/Caprese-Salat-Rezept-Italien.jpg" alt="Insalata Caprese" id="printImageCaprese">
+                <div class="print" id="printpagebutton">
+                    <button onclick="printpage()"><i class="fas fa-print"></i></button>
+                </div>
                 <h2>Insalata Caprese</h2>
                 <p>
                     Insalata Caprese (known in the States as a Caprese Salad) is a traditional Italian appetizer.
@@ -96,6 +101,22 @@
             <a href="mailto:cookbookteam@example.com">cookbookteam@example.com</a>
         </p>
     </footer>
+    <script>
+             function printpage() {
+        //Get the print button and put it into a variable
+        var printButton = document.getElementById("printpagebutton");
+         //Get the print image and put it into a variable
+        var printImage = document.getElementById("printImageCaprese");
+        //Set the button visibility to 'hidden' 
+        printButton.style.visibility = 'hidden';
+        //Set the print image size to 300 px
+        printImageCaprese.style.width = '200px';
+        //Print the page content
+        window.print();
+        printButton.style.visibility = 'visible';
+        printImageCaprese.style.width = '0px';
+                }
+        </script>
 </body>
 
 </html>
