@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipe for Macarons">
     <title>Cook Book</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles.css" />
@@ -32,14 +33,14 @@
             <ul class="navbar macarons">
                 <a href="index.html">Home</a>
                 <li class="dropdown">
-                    <button class="dropbtn">Starters Recipes
+                    <button class="dropbtn" aria-label="Starters Recipe">Starters Recipes
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
                         <a href="insalata_caprese.html">Insalata Caprese</a>
                 </li>
                 <li class="dropdown">
-                    <button class="dropbtn">Mains Recipes
+                    <button class="dropbtn" aria-label="Mains Recipes">Mains Recipes
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
@@ -48,7 +49,7 @@
                     </div>
                 </li>
                 <li class="dropdown">
-                    <button class="dropbtn">Desserts Recipes
+                    <button class="dropbtn" aria-label="Desserts Recipes">Desserts Recipes
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
@@ -60,7 +61,7 @@
                 <div class="recipe">
                     <img src="https://cdn.pixabay.com/photo/2017/07/28/14/29/macarons-2548827_960_720.jpg" alt="Macarons" id="printImageMacarons">
                     <div class="print" id="printpagebutton">
-                        <button onclick="printpage()"><i class="fas fa-print"></i></button>
+                        <button onclick="printpage()" aria-label="Print Page"><i class="fas fa-print"></i></button>
                     </div>
                     <h2>Macarons</h2>
                     <p>
@@ -72,6 +73,22 @@
                         strawberry macarons I like to use freeze dried fruit powder along the fresh fruits so their
                         flavor is enhanced without changing their texture.
                     </p>
+                    <h3>Ingredients:</h3>
+                    <ul>
+                        <li>1 1/2 cup (150g) ground almonds</li>
+                        <li>1 1/4 cup (150g) powdered sugar</li>
+                        <li>4-5 tsp (4g) freeze-dried raspberries, finely ground, seeds removed</li>
+                        <li>55g egg whites (from about about 2 small eggs)</li>
+                        <li>pinch of red food coloring powder</li>
+                        <li>pinch of salt</li>
+                        <li>3/4 cup (150g) granulated sugar</li>
+                        <li>2 1/2 tbsp (38ml) water</li>
+                        <li>5 oz (150g) fresh or frozen raspberries</li>
+                        <li>2 tbsp (30g) sugar</li>
+                        <li>1/3 cup (80g) whipping cream</li>
+                        <li>8 oz (230g) white chocolate, small pieces</li>
+                        <li>4-5 tsp (4g) freeze-dried raspberries finely ground, seeds removed</li>
+                    </ul>
                     <h3>How to prepare it?</h3>
                     <h4>1) Prepare white chocolate raspberry filling</h4>
                     <p>
@@ -103,22 +120,7 @@
                         bag and spread on the inside of the macarons and sandwich them together.Refrigerate for at at
                         least one day before serving, to meld the flavors. Serve macarons at room temperature.
                     </p>
-                    <h3>Ingredients:</h3>
-                    <ul>
-                        <li>1 1/2 cup (150g) ground almonds</li>
-                        <li>1 1/4 cup (150g) powdered sugar</li>
-                        <li>4-5 tsp (4g) freeze-dried raspberries, finely ground, seeds removed</li>
-                        <li>55g egg whites (from about about 2 small eggs)</li>
-                        <li>pinch of red food coloring powder</li>
-                        <li>pinch of salt</li>
-                        <li>3/4 cup (150g) granulated sugar</li>
-                        <li>2 1/2 tbsp (38ml) water</li>
-                        <li>5 oz (150g) fresh or frozen raspberries</li>
-                        <li>2 tbsp (30g) sugar</li>
-                        <li>1/3 cup (80g) whipping cream</li>
-                        <li>8 oz (230g) white chocolate, small pieces</li>
-                        <li>4-5 tsp (4g) freeze-dried raspberries finely ground, seeds removed</li>
-                    </ul>
+              
                 </div>
             </div>
             </main>
@@ -143,6 +145,10 @@
         printImageMacarons.style.width = '0px';
         }
         </script>
+           </script>
+           <!-- Go to www.addthis.com/dashboard to customize your tools -->
+           <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6120bfd089bb26bf"></script>
+   
     </body>
 
 </html>
