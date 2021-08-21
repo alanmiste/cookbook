@@ -345,8 +345,8 @@ body {
   /* Increased the size of the image boxes */
   .boximage {
     display: block;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
     object-fit: cover;
   }
   
@@ -366,7 +366,7 @@ body {
   
   .imgcontainer:hover .overlay {
     opacity: 0.50;
-    width: 300px;
+    width: 200px;
   }
   
   .imgtext {
