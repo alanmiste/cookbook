@@ -191,7 +191,7 @@ body {
 
   .dropdown {
     float: left;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   
   .dropdown .dropbtn {
@@ -235,146 +235,18 @@ body {
     display: block;
   }
 
-  footer {
-    font-family: 'Raleway', sans-serif;
-    font-size: 11px;
-    text-align: center;
-    padding: 3px;
-    background-color: rgb(19, 19, 19);
-    color: white;
-    padding: 0px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-
-  .maincontent_caprese {
-    height: max-content;
-    margin-bottom: 20px;
-    margin-top: 0px;
-    text-align: center;
-    padding: 20px 50px 100px 50px;
-  }
-  .maininsalata{
-    background-image: url("https://www.tasteoftravel.at/wp-content/uploads/Caprese-Salat-Rezept-Italien.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  #printImageCaprese {
-    width: 0px;
-    margin: 0;
-  }
-.recipe {
-  /*Alan- I added the three next lines, so the background of all recipes had been changed to transparent gray with curved corners, and that makes the text more readable */
-  border-radius: 20px;
-  background-color: rgba(90, 90, 90, 0.6);
-  padding: 5vh;
-  height: max-content;
-}
-
-.maincontent_caprese .recipe h2, .maincontent_caprese .recipe h3 {
-  color: yellowgreen;
-  margin: 20px 50px;
-}
-.maincontent_caprese .recipe p {
-  color: whitesmoke;
-    }
-.maincontent_caprese .recipe ul {
-  list-style: none;
-  color: whitesmoke;
-  text-align: center;
-}
-
-.maincontent_paneer {
-  background-size: cover;
-  background-attachment: fixed;
-  height: max-content;
-  text-align: center;
-  margin-bottom: 20px;
-  text-align: center;
-  padding: 20px 50px 100px 50px;
-}
-
-.maincontent_paneer .recipe {
-  height: max-content;
-  }
-  .maincontent_paneer .recipe h2, .maincontent_paneer .recipe h3 {
-    color: orangered;
-    margin: 20px 50px;
-  }
-
-  .maincontent_paneer .recipe p {
-    color: whitesmoke;
-      }
-      .maincontent_paneer .recipe ul {
-        list-style: none;
-    color: whitesmoke;
-    text-align: center;
-      }
-  .mainpaneer {
-    background-image: url("https://www.harighotra.co.uk/images/recipes/Oct16/karahi_paneer_landscape.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-  #printImagePaneer {
-    width: 0px;
-    margin: 0;
-  }
-
-/* Vegan Kurdish Biryani */
-
-.maincontent_vkb {
-  background-size: cover;
-  background-attachment: fixed;
-  height: max-content;
-  text-align: center;
-  margin-bottom: 20px;
-  text-align: center;
-  padding: 20px 50px 100px 50px;
-}
-
-.maincontent_vkb .recipe {
-  height: max-content;
-  }
-  .maincontent_vkb .recipe h2, .maincontent_vkb .recipe h3 {
-    color: orangered;
-    margin: 20px 50px;
-  }
-
-  .maincontent_vkb .recipe p {
-    color: whitesmoke;
-    margin: 2vh;
-      }
-  .maincontent_vkb .recipe ul {
-    list-style: none;
-    color: whitesmoke;
-    text-align: center;
-  }
-  .mainvkb {
-    background-image: url("https://bestofvegan.com/wp-content/uploads/2021/03/Biryan2-scaled.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  #printImageVbk {
-    width: 0px;
-    margin: 0;
-  }
   /*Image boxes style*/
   
   .imageboxes{
     display: flex;
     margin: 20px;
     /* Alan- Centering the imagebox */
-    /* justify-content: space-around; */
     justify-content: center;
-    /* width: 100%; */
     flex-wrap: wrap;
   }
   
   .imgcontainer {
     position: relative;
-    /* width: 30%; */
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
@@ -424,6 +296,133 @@ body {
     text-align: center;
     z-index: 100;
   }
+
+  footer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    padding: 0px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .maincontent_caprese {
+    height: max-content;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    text-align: center;
+    padding: 20px 50px 100px 50px;
+  }
+  .maininsalata{
+    background-image: url("https://www.tasteoftravel.at/wp-content/uploads/Caprese-Salat-Rezept-Italien.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #printImageCaprese {
+    width: 0px;
+    margin: 0;
+  }
+.recipe {
+  /*Alan- I added the three next lines, so the background of all recipes had been changed to transparent gray with curved corners, and that makes the text more readable */
+  border-radius: 20px;
+  background-color: rgba(90, 90, 90, 0.6);
+  padding: 5vh;
+  height: max-content;
+}
+
+.maincontent_caprese .recipe h2, .maincontent_caprese .recipe h3 {
+  color: yellowgreen;
+  margin: 20px auto;
+}
+.maincontent_caprese .recipe p {
+  color: whitesmoke;
+    }
+.maincontent_caprese .recipe ul {
+  list-style: none;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.maincontent_paneer {
+  background-size: cover;
+  background-attachment: fixed;
+  height: max-content;
+  text-align: center;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px 50px 100px 50px;
+}
+
+.maincontent_paneer .recipe {
+  height: max-content;
+  }
+  .maincontent_paneer .recipe h2, .maincontent_paneer .recipe h3 {
+    color: orangered;
+    margin: 20px auto;
+  }
+
+  .maincontent_paneer .recipe p {
+    color: whitesmoke;
+      }
+  .maincontent_paneer .recipe ul {
+    list-style: none;
+    color: whitesmoke;
+    text-align: center;
+  }
+  .mainpaneer {
+    background-image: url("https://www.harighotra.co.uk/images/recipes/Oct16/karahi_paneer_landscape.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #printImagePaneer {
+    width: 0px;
+    margin: 0;
+  }
+
+/* Vegan Kurdish Biryani */
+
+.maincontent_vkb {
+  background-size: cover;
+  background-attachment: fixed;
+  height: max-content;
+  text-align: center;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px 50px 100px 50px;
+}
+
+.maincontent_vkb .recipe {
+  height: max-content;
+  }
+  .maincontent_vkb .recipe h2, .maincontent_vkb .recipe h3 {
+    color: orangered;
+    margin: 20px auto;
+  }
+
+  .maincontent_vkb .recipe p {
+    color: whitesmoke;
+    margin: 2vh;
+      }
+  .maincontent_vkb .recipe ul {
+    list-style: none;
+    color: whitesmoke;
+    text-align: center;
+  }
+  .mainvkb {
+    background-image: url("https://bestofvegan.com/wp-content/uploads/2021/03/Biryan2-scaled.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #printImageVbk {
+    width: 0px;
+    margin: 0;
+  }
+  
 .print {
   width: max-content;
   display: block;
@@ -461,7 +460,7 @@ border: 0;
   }
     .maincontent_macarons .recipe h2, .maincontent_macarons .recipe h3, .maincontent_macarons .recipe h4{
       color: rgb(243, 98, 123);
-      margin: 20px 50px;
+      margin: 20px auto;
     }
     .maincontent_macarons .recipe p {
       color: whitesmoke;
@@ -495,7 +494,7 @@ border: 0;
   }
   .maincontent_pistachio .recipe h2, .maincontent_pistachio .recipe h3, .maincontent_pistachio .recipe h4{
     color: rgb(3, 252, 111);
-    margin: 20px 50px;
+    margin: 20px auto;
   }
 
   .maincontent_pistachio {
